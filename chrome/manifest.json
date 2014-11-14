@@ -24,7 +24,7 @@
     {
       //"matches": ["http://*.yahoo.com/*", "https://*.yahoo.com/*"],
       "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "js": ["bower_components/angular/angular.js", "app.js", "content.js"]
     }
   ],
 
