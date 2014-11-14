@@ -1,0 +1,32 @@
+{
+  // Required
+  "manifest_version": 2,
+  "name": "Yahoo Test",
+  "version": "0.0.1",
+
+  // Recommended
+  "description": "A plain text description",
+  "icons": {},
+
+  // Pick one (or none)
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+
+  // Optional
+  "author": "golden-warning",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+  "content_scripts": [
+    {
+      //"matches": ["http://*.yahoo.com/*", "https://*.yahoo.com/*"],
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+
+  "web_accessible_resources": ["popup.html"]
+}

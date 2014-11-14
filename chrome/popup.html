@@ -1,0 +1,14 @@
+<html ng-app='yahooTest'>
+  <head>
+  </head>
+  <body ng-controller='yahooTestController'>
+    <input type="text" name="input" ng-model="text" ng-pattern="word" required ng-trim="false">
+    <div>
+      {{text}}
+    </div>
+  </body>
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="services/services.js"></script>
+  <script src="app.js"></script>
+</html>
